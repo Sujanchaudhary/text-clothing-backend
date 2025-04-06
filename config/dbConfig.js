@@ -1,9 +1,11 @@
+
 module.exports = {
-  HOST: "localhost",
-  USER: "root",
-  PASSWORD: "",
-  DB: "test-clothing",
+  HOST: process.env.MYSQLHOST || "localhost",
+  USER: process.env.MYSQLUSER || "root",
+  PASSWORD: process.env.MYSQLPASSWORD || "",
+  DB: process.env.MYSQL_DATABASE || "test-clothing",
   dialect: "mysql",
+  port: process.env.MYSQLPORT || 3306,
   pool: {
     max: 5,
     min: 0,
