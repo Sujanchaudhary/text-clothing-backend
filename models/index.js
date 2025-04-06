@@ -30,7 +30,7 @@ db.Inventory = require("./../models/inventory.js")(sequelize, Sequelize);
 db.Category = require("./../models/category.js")(sequelize, Sequelize);
 db.Unit = require("./../models/unit.js")(sequelize, Sequelize);
 db.Sale = require("./../models/sale.js")(sequelize, Sequelize);
-db.SaleItem = require("./../models/saleItem.js")(sequelize, Sequelize);
+db.SaleItem = require("./../models/saleitem.js")(sequelize, Sequelize);
 db.Expense = require("./../models/expense.js")(sequelize, Sequelize);
 db.StockHistory = require("./../models/stock.js")(sequelize, Sequelize);
 
