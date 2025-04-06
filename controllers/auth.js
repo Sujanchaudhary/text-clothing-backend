@@ -1,4 +1,6 @@
-const bcrypt = require("bcrypt");
+
+const bcrypt = require('bcryptjs');
+
 const jwt = require("jsonwebtoken");
 const { Users, Profile, Sequelize, VendorProfile } = require("../models");
 const nodemailer = require("nodemailer");

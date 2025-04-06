@@ -1,5 +1,5 @@
 const { Users, Profile } = require("./models");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 const seedUsers = async () => {
   await Users.sync(); // Ensure the table exists before seeding
